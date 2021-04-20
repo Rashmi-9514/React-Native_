@@ -45,173 +45,113 @@ class Expandable_ListView extends Component {
 show_Selected_Category = (item) => {
 	 switch(item)
         {
-            case 1:
-              userProfile();
+            case 1:userProfile();
 			break;
-			case 2:
-              CleverTap.profileSetMultiValuesForKey(['a', 'b', 'c'], 'letters');
+			case 2:CleverTap.profileSetMultiValuesForKey(['a', 'b', 'c'], 'letters');
 			break;
-			case 3:
-              CleverTap.profileRemoveMultiValueForKey('b', 'letters');
+			case 3:CleverTap.profileRemoveMultiValueForKey('b', 'letters');
 			break;
-			case 4:
-              //Removing a Value from the Multiple Values
-				CleverTap.profileRemoveMultiValueForKey('b', 'letters');
+			case 4: //Removing a Value from the Multiple Values
+                    CleverTap.profileRemoveMultiValueForKey('b', 'letters');
 			break;
-			case 5:
-              CleverTap.profileAddMultiValueForKey('d', 'letters');
+			case 5: CleverTap.profileAddMultiValueForKey('d', 'letters');
 			break;
-			case 6:
-              id_mngmt();
+			case 6:id_mngmt();
 			break;
-			case 7:
-              //Removing a Value from the Multiple Values
-				rmvalskey();
+			case 7://Removing a Value from the Multiple Values
+			    	rmvalskey();
 			break;
-			case 8:
-             rmvalkey();
+			case 8: rmvalkey();
 			break;
-			case 9:
-              getCTid();
+			case 9: getCTid();
 			break;
-			case 10:
-              userLocation();
+			case 10: userLocation();
 			break;
-			case 11:
-              CleverTap.initializeInbox(); 
+			case 11: CleverTap.initializeInbox();
 			break;
-			case 12:
-              appInbox();
+			case 12: appInbox();
 			break;
-			case 13:
-              getTotmsg();
+			case 13: getTotmsg();
 			break;
-			case 14:
-              unread ();
+			case 14: unread ();
 			break;
-			case 15:
-              allmsg ();
+			case 15: allmsg ();
 			break;
-			case 16:
-              allunreadmsg ();
+			case 16: allunreadmsg ();
 			break;
-			case 17:
-              inboxid ();
+			case 17: inboxid ();
 			break;
-			case 18:
-              deleteMsg  ();
+			case 18: deleteMsg  ();
 			break;
-			case 19:
-              markread  ();
+			case 19: markread  ();
 			break;
-			case 20:
-              pnviewed  ();
-			break;case 21:
-              pnclicked  ();
+			case 20: pnviewed  ();
 			break;
-			case 22:
-              pushevent  ();
+			case 21: pnclicked  ();
 			break;
-			case 23:
-              pushchargedevent  ();
+			case 22: pushevent  ();
 			break;
-			case 24:
-              CleverTap.setDebugLevel(3);
+			case 23: pushchargedevent  ();
 			break;
-			case 25:
-              create_NCGroup   ();
+			case 24: CleverTap.setDebugLevel(3);
 			break;
+			case 25: create_NCGroup   ();
 			break;
-			case 26:
-              create_NC    ();
+			case 26: create_NC    ();
 			break;
+			case 27: delete_NC    ();
 			break;
-			case 27:
-              delete_NC    ();
+			case 28: delete_NCGroup    ();
 			break;
+			case 29: pushFcmRegistrationId    ();
 			break;
-			case 28:
-              delete_NCGroup    ();
+			case 30: create_notification    ();
 			break;
+			case 31: getUnitID();
 			break;
-			case 29:
-              pushFcmRegistrationId    ();
+			case 32: getAllDisplayUnits ();
 			break;
+			case 33	: fetch  ();
 			break;
-			case 30:
-              create_notification    ();
+			case 34	: activate    ();
 			break;
-			case 31:
-              getUnitID();
+			case 35	: fetchAndActivate    ();
 			break;
-			case 32:
-                 getAllDisplayUnits ();
+			case 36	: fetchwithMinIntervalinsec    ();
 			break;
-			case	33	:
-			 fetch  ();
+			case 37	: setMinimumFetchIntervalInSeconds     ();
 			break;
-			case	34	:
-			  activate    ();
+			case 38	: getBoolean     ();
 			break;
-			case	35	:
-			  fetchAndActivate    ();
+			case 39	: getDouble    ();
 			break;
-			case	36	:
-			  fetchwithMinIntervalinsec    ();
+			case 40	: getLong    ();
 			break;
-			case	37	:
-			  setMinimumFetchIntervalInSeconds     ();
+			case 41	: getString    ();
 			break;
-			case	38	:
-			  getBoolean     ();
+			case 42	: getStrings    ();
 			break;
-			case	39	:
-			  getDouble    ();
+			case 43	: reset_config    ();
 			break;
-			case	40	:
-			  getLong    ();
+			case 44	: getLastFetchTimeStampInMillis    ();
 			break;
-			case	41	:
-			  getString    ();
+			case 45	: getFeatureFlag();
 			break;
-			case	42	:
-			  getStrings    ();
+			case 46	: enablePersonalization();
 			break;
-			case	43	:
-			  reset_config    ();
+			case 47	: profile_getProperty();
 			break;
-			case	44	:
-			  getLastFetchTimeStampInMillis    ();
+			case 48	: attri();
 			break;
-			case	45	:
-			  getFeatureFlag();
+			case 49	: CleverTap.setOptOut(value);
 			break;
-			case	46	:
-			  enablePersonalization();
+			case 50	: CleverTap.enableDeviceNetworkInfoReporting(value);
 			break;
-			case	47	:
-			  profile_getProperty();
+			case 51	: CleverTap.enablePersonalization();
 			break;
-			case	48	:
-			  attri();
+			case 52	: CleverTap.setOffline(value);
 			break;
-			case	49	:
-			  CleverTap.setOptOut(value);
-			break;
-			case	50	:
-			  CleverTap.enableDeviceNetworkInfoReporting(value);
-			break;
-			case	51	:
-			  CleverTap.enablePersonalization();
-			break;
-			case	52	:
-			 CleverTap.setOffline(value);
-			break;
-			
-			
-			
 		}
-      
 }
 	  
   render() {
