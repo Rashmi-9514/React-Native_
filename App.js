@@ -481,7 +481,7 @@ pushFcmRegistrationId = () => {
 create_notification= () => {
 			alert('');
 		//Setting up a Push Notification
-		//CleverTapReact.createNotification(extras);
+		//CleverTap.createNotification(extras);
  								
 		};	
 //Native Display
