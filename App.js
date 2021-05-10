@@ -421,26 +421,26 @@ inboxid = () => {
 		}; 	 
 
 deleteMsg = () => {
-			//Get inbox Id
+			//Delete Message with inbox Id
 			alert('Check Console for values');
 		CleverTap.deleteInboxMessageForId('Message Id');
         							
 		}; 	
 
 markread = () => {
-			//Get inbox Id
+			//Mark a message as Read for inbox Id
 			alert('Check Console for values');
 		CleverTap.markReadInboxMessageForId('Message Id');
         							
 		}; 
 pnviewed = () => {
-			//Get inbox Id
+			//push Inbox Notification Viewed Event For Id
 			alert('Check Console for values');
 		CleverTap.pushInboxNotificationViewedEventForId('Message Id');
         							
 		}; 
 pnclicked = () => {
-			//Get inbox Id
+			//push Inbox Notification Clicked Event For Id
 			alert('Check Console for values');
 		CleverTap.pushInboxNotificationClickedEventForId('Message Id');	
         								
